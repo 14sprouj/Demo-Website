@@ -1,4 +1,4 @@
-#header {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,33 +6,25 @@
     background-color: #333;
 }
 
-/*
-header li {
-    float: left;
-}
-
-
 li {
     float: left;
 }
-*/
 
 li a, .dropbtn {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-header 'li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: red;
 }
 
-/*
 li.dropdown {
     display: inline-block;
 }
-*/
 
 .dropdown-content {
     display: none;
