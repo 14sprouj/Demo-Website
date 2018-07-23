@@ -48,6 +48,7 @@ color:white;
 text-decoration:none;
 }
 
+code {font-family:Courier;}
 
 table {
     border-collapse: collapse;
