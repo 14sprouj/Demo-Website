@@ -52,13 +52,18 @@ code {font-family:Courier;}
 
 table {
     border-collapse: collapse;
+	table-layout: auto
 }
 
 table, th, td {
     border: 1px solid black;
 }
 
-tr:hover {background-color: #f5f5f5;}
+tr:hover {background-color: #f5f5f5
+
+ulist li:before {
+  content: '✓';
+} /*Site History lists */
 
 #footer {
 	background-color:lightblue;

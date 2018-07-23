@@ -1,3 +1,13 @@
+.ulist, .ulist ulist {
+  list-style: none;
+  text-decoration: none;
+}
+
+.ulist list.h:before {
+  content: "\2713";
+} /*Site History lists */
+
+
 ul {
     list-style-type: none;
     margin: 0;
