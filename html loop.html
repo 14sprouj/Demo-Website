@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+var inputs = document.getElementsByClassName("brp");
+var converter1 = Markdown.getSanitizingConverter();
+var CODESOFTLAB = new Markdown.Converter(converter1);
+
+for( var i = 0; i < inputs.length; i++ )
+{
+  var input = inputs[i];
+  var value = input.value;
+  var MarkDownPreviewHtml = CODESOFTLAB.makeHtml(value);
+  var targetId = input.id.replace("before", "Jail");
+  var targetSpan = document.getElementById( targetId );
+  // targetSpan.textContent = MarkDownPreviewHtml;
+  targetSpan.innerHTML = MarkDownPreviewHtml;
+}//for()
+</script>
+
+<span id="replyJail-1" class="rep"></span>
+<input id="replybefore-1" class="brp" type="hidden" value="hello"/>
+
+<span id="replyJail-2" class="rep"></span>
+<input id="replybefore-2" class="brp" type="hidden" value="#Bold letter"/>
+
+<span id="replyJail-3" class="rep"></span>
+<input id="replybefore-3" class="brp" type="hidden" value="`My code`"/>
+</body>
+</html>
